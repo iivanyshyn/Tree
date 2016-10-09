@@ -8,20 +8,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%-- <a href="/treeCompany">Back</a>
+	<a href="/">Back</a>
 	<table>
 		<c:forEach var="company" items="${companies}">
 			<tr>
-				<td style="padding-left: calc(25px*${company.level})">-${company.name} ${company.invest}</td>
+				<td style="padding-left: calc(25px*${company.level})">-${company.name} ${company.invest} | <c:if test="${company.allInvest ne 0}">${company.allInvest}</c:if></td>
 			</tr>
 		</c:forEach>
-	</table> --%>
-	<a href="/treeCompany">Back</a>
-	<ul>
+	</table>
+
+	<%-- <ul>
 		<c:forEach var="company" items="${companies}">
-			<li style="padding-left: calc(25px*${company.level})">-${company.name} ${company.invest} | ${company.allInvest}</li>
+			<li style="padding-left: calc(25px*${company.level})">-${company.name} ${company.invest} | <c:if test="${company.allInvest ne 0}">${company.allInvest}</c:if></li>
 		</c:forEach>
-	</ul>
+	</ul> --%>
 
 </body>
 </html>
