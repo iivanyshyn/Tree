@@ -27,7 +27,7 @@ public class CompanyServiceImpl implements CompanyService {
 	}
 	
 	public void setCompaniesNull() {
-		this.companies = new ArrayList<>();
+		this.companies = new ArrayList<Company>();
 	}
 
 	public Company addCompany(Company company) {
